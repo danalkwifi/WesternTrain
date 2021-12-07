@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>find address</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+     body { padding-top: 50px; }
+    .jumbotron{background-color:#e4dcd2;}
+    button{
+        color: #ffffff;
+        background:#C2B97F;
+        
+        }
+    button:hover {
+        background: #8f8861;
+        text-decoration: none;
+      }
+      .rtn-btn{background:#8E5572;}
+     .form-check-label{font-size: 20px;font-weight:500px}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+        <h1>Complete the information below to add a new ticket.</h1>
+      <br>
+        <form action='/add-ticket'>
+            <label> Enter your Passenger ID:</label>
+                <input name='passengerID'type = "text" placeholder = 'i.e. four-digit code'><br>
+            <label> Enter the number of months:</label>
+                <input name='intervalNum'type = "text" placeholder = 'i.e. 1, 2, 3,etc.'>
+                <br><br><button>add ticket</button><br><br>
+                <div class="result"></div>
+        </form>
+        <a href = "/">
+            <button class='rtn-btn'>return to menu</button>
+        </a>
+  </div>
+</div>
+
+</body>
+</html>

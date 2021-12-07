@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>find address</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body { padding-top: 50px; }
+    .jumbotron{background-color:#e4dcd2;}
+    button{
+        color: #ffffff;
+        background:#C2B97F;
+        
+        }
+    button:hover {
+        background: #8f8861;
+        text-decoration: none;
+      }
+      .rtn-btn{background:#8E5572;}
+     .form-check-label{font-size: 20px;font-weight:500px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+        <h1>Enter the Station Number of a Station to find its Address.</h1><br>
+        <form action='/view-address'>
+            <label class='form-check-label'> Station Number:</label>
+                <input name='stationNo'type = "text" placeholder = 'e.g. 1, 2, 3, ...'>
+                <button>Go!</button><br><br>
+                <div class="resultdiv"></div>
+        </form>
+        <a href = "/">
+            <button class='rtn-btn'>return to menu</button>
+        </a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>find address</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body { padding-top: 50px; }
+    .jumbotron{background-color:#e4dcd2;}
+    button{
+        color: #ffffff;
+        background:#C2B97F;
+        
+        }
+    button:hover {
+        background: #8f8861;
+        text-decoration: none;
+      }
+      .rtn-btn{background:#8E5572;}
+     .form-check-label{font-size: 20px;font-weight:500px}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+        <h1>complete the information below to modify your ticket's expiry date.</h1><br><br>
+        <form action='/chg-exp-date'>
+            <label> passenger ID: </label>
+                <input name='passID' type = "text" placeholder = 'three-digit code'><br>
+            <label> new expiry date:</label>
+                <input name='date' type = "text" placeholder = 'YYYY/MM/DD format'><br><br>
+            <button>modify</button><br><br>
+                <div class="result"></div>
+        </form>
+        <a href = "/">
+            <button class='rtn-btn'>return to menu</button>
+        </a>
+  </div>
+</div>
+
+</body>
+</html>
